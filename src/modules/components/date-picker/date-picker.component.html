@@ -1,0 +1,31 @@
+<date-button class="button-date-picker" icon_name="calendar_today" (click)="openDatePicker()">
+</date-button>
+<div class="date-item" [hidden]="!openDate">
+    <div class="date-info">
+        <date-button class="date-option">
+            <p> {{month}} {{year}}</p>
+        </date-button>
+        <div class="date-route">
+            <date-button color="primary" icon_name="keyboard_arrow_left" (click)="previousMonth()"></date-button>
+            <date-button color="primary" icon_name="keyboard_arrow_right" (click)="nextMonth()"></date-button>
+        </div>
+    </div>
+
+    <div class="nameDays">
+        <p *ngFor="let day of dayes" color="label-color" class="day"> {{day.slice(0,1)}}</p>
+    </div>
+    <div class="innerDays">
+        <span color="primary" class="titleMonth">{{month}}</span>
+        <div class="row" id="row">
+            <span id="spaceDayes"></span>
+            <div  *ngFor="let item of (totalDayes | transformObjectDate)">
+                <date-button class="dayOfDatePicker"
+                    [ngClass]="{selectDay: (item.date == this.currentDate),'selectedDate':(item.date == this.selectedDate)}"
+                    class="buttonDay" (click)="selectDate(item.date)">
+                    <p [ngClass]="{'time':(item.date == this.selectedDate)}">{{item.day}}</p>
+                </date-button>
+
+            </div>
+        </div>
+    </div>
+</div>
