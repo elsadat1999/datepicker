@@ -1,0 +1,102 @@
+.button-date-picker {
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    display: block;
+    border-radius: 50%;
+}
+
+.date-item {
+    width: 296px;
+    height: 375px;
+    border: 1px solid#ddd;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    .date-info {
+        margin: 5% calc(33% / 7 - 16px);
+        padding: 8px 8px 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .date-option {
+            padding: 0 16px;
+            height: 36px;
+            line-height: 36px;
+        }
+    }
+}
+
+.date-route {
+    display: flex;
+    align-items: center;
+    date-button {
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+}
+.nameDays {
+    padding: 0px 8px 8px 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid#ddd;
+    .day {
+        width: calc(100% / 7);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+}
+
+.innerDays {
+    padding: 0px 8px 8px 8px;
+    height: 36px;
+    line-height: 36px;
+    .titleMonth {
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.selectDay {
+    border: 1px solid#ddd;
+}
+.selectedDate {
+    background-color: royalblue;
+    .time {
+        color: #fff;
+    }
+}
+.buttonDay {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    > div {
+        text-align: center;
+        width: calc(100% / 7);
+        font-size: 13px;
+        span {
+            height: 40px;
+            width: 40px;
+            display: block;
+            line-height: 40px;
+        }
+    }
+}

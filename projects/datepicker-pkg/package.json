@@ -1,0 +1,32 @@
+{
+  "name": "ng-datepicker-pkg",
+  "version": "1.1.0",
+  "description": "custom datepicker angular material",
+  "author": {
+    "name": "Mohamed Elsadat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elsadat1999/datepicker"
+  },
+  "keywords": [
+    "datepicker",
+    "calendar",
+    "ng datepicker",
+    "ngx datepicker",
+    "angular4 datepicker",
+    "angular5 calendar",
+    "angular6 calendar",
+    "angular7 calendar",
+    "angular8 otp input",
+    "calendar angular",
+    "angular datepicker",
+    "angular datepicker verification",
+    "angular calendar verification"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "~10.0.0",
+    "@angular/core": "~10.0.0"
+  }
+}

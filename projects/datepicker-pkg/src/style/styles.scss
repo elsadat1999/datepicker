@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+p,button{
+    font-size: 14px;
+    font-family: Roboto,Helvetica Neue,sans-serif;    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --primary:rgba(0,0,0,.54);
+    --label-color: rgba(0,0,0,.38);
+}
+
+
